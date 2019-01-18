@@ -1,0 +1,53 @@
+{
+  "name": "import-helper",
+  "version": "0.0.1-alpha.1",
+  "description": "Import helper for your code.",
+  "repository": "sorrycc/import-helper",
+  "author": {
+    "name": "chencheng",
+    "email": "sorrycc@gmail.com"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "import-helper": "cli.js"
+  },
+  "scripts": {
+    "changelog": "git changelog CHANGELOG.md && git add ./ && git commit -m 'update CHANGELOG.md'",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepublishOnly": "npm run changelog && np --no-cleanup --yolo --no-publish",
+    "test": "umi-test"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.2.3",
+    "@babel/traverse": "^7.2.3",
+    "@babel/types": "^7.2.2",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.1",
+    "yargs-parser": "^11.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "3",
+    "husky": "1",
+    "lint-staged": "8",
+    "np": "3",
+    "prettier": "1",
+    "umi-test": "1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "cli.js"
+  ],
+  "license": "MIT"
+}
