@@ -1,6 +1,6 @@
 # import-helper
 
-[WIP] Import helper for your code.
+[WIP] Don't waste time to write import/require statement.
 
 [![NPM version](https://img.shields.io/npm/v/import-helper.svg?style=flat)](https://npmjs.org/package/import-helper)
 [![Build Status](https://img.shields.io/travis/sorrycc/import-helper.svg?style=flat)](https://travis-ci.org/sorrycc/import-helper)
