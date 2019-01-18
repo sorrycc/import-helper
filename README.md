@@ -6,10 +6,6 @@
 [![Build Status](https://img.shields.io/travis/sorrycc/import-helper.svg?style=flat)](https://travis-ci.org/sorrycc/import-helper)
 [![NPM downloads](http://img.shields.io/npm/dm/import-helper.svg?style=flat)](https://npmjs.org/package/import-helper)
 
-## Deprecated
-
-Use typescript instead.
-
 ## Why
 
 解决手写 import 的重复劳动，能交给机器做的绝不自己动手。
