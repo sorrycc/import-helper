@@ -1,6 +1,6 @@
 {
   "name": "import-helper",
-  "version": "0.0.1-alpha.1",
+  "version": "0.1.0",
   "description": "Don't waste time to write import/require statement.",
   "repository": "sorrycc/import-helper",
   "author": {
