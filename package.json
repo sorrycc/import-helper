@@ -2,10 +2,7 @@
   "name": "import-helper",
   "version": "0.1.1",
   "description": "Don't waste time to write import/require statement.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sorrycc/import-helper.git"
-  },
+  "repository": "sorrycc/import-helper",
   "author": {
     "name": "chencheng",
     "email": "sorrycc@gmail.com"
