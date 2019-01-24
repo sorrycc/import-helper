@@ -22,11 +22,12 @@ if (!args._[0]) {
 
 const root = args.root || process.cwd();
 const file = join(root, args._[0]);
-const code = require('./lib/addImports')(readFileSync(file, 'utf-8'), {
+const originCode = readFileSync(file, 'utf-8');
+const code = require('./lib/addImports')(originCode, {
   ...require('./lib/module/node'),
 });
 
-if (args.write) {
+if (args.write && originCode !== code) {
   writeFileSync(file, code, 'utf-8');
 } else {
   console.log(code);
